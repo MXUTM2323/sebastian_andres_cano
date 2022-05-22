@@ -1,0 +1,395 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color_1: rgb(255, 162, 0);
+    --color_2: rgb(255, 255, 255);
+    --color_3:rgb(0, 0, 0);
+    --type_titulos:font-family: 'Plus Jakarta Sans', sans-serif;
+    --color_fondo: rgb(255, 255, 255) ;
+    
+}
+
+* {
+    margin: 0em; 
+    padding: 0em; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+}
+body{
+    font-size: 10px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*inicio de la cabeza */
+header {
+    width: 100%;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    background-color: var(--color_1);
+    position: fixed;
+    z-index: 5 ;
+}
+.contenidos {
+    display: flex;
+    width: 70%;
+    margin:auto;
+    justify-content:space-between;
+    align-items: center;
+}
+.caja{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    width: 15%;
+}
+.mi_portafolio{
+    font-size: 50px;
+    font-family: var(--type_titulos);
+    color: white;
+}
+.menu{ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 80px;  
+}
+.menu ul li{
+    display:inline;
+    font-family: var(--type_titulos);
+    border-radius:1em solid rgb(3, 3, 3) ;
+    padding: .8em 1em .8em 1em;
+    margin-left: 0em;
+    font-size: 20px;
+}
+.menu a{
+    color: rgb(243, 243, 243);
+}
+.menu a:hover{   
+ text-decoration: overline 14px;
+}
+/*fin de cabeza*/
+
+
+/*bienvenidos*/
+.bienvenido_caja{
+    background-color: var(--color_2);
+    padding: 1em 0em 3em 0em;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 65px),50% 100%,0 calc(100% - 65px));
+}
+.bienvenido {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    gap: 80px;
+    margin-top: 18em;
+    margin-bottom: 7em;
+}
+.galeria{
+    width: 50%; 
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+.texto h1{
+    font-family: var(--type_titulos);
+    text-align: center;
+    font-size: 50px;
+}
+.texto p{
+    font-family: var(--type_titulos);
+    font-size: 15px;
+}
+.texto .icono_movimiento{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2em;
+}
+.icono_movimiento a {
+    color: var(--color_1);
+}
+
+
+
+/*fondo_que_servicios_ofrezco*/
+.fondo_que_servicios_ofrezco{
+    clip-path: polygon(0 0,50% 65px,100% 0,100% 100%,0 100%);
+    margin-top: -10em;
+    background-color: var(--color_3);
+}
+.servicioss{
+    padding-top: 15em;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5em;
+    margin-bottom: 7em;
+  
+}
+.servicioss h1{
+    font-family: var(--type_titulos);
+    text-align: center;
+    font-size: 40px;
+    margin: 2em;
+}
+.servicioss p{
+    font-family: var(--type_titulos);
+    font-size: 15px;
+    width: 70%;
+}
+.servicioss h3{
+    font-family: var(--type_titulos);
+    text-align: center;
+    font-size: 20px; 
+}
+.servicioss .icono_movimiento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.icono_movimiento a {
+    color: var(--color_1);
+}
+
+
+
+/*fondo_galerias*/
+.fondo_galeria{
+    background-color:var(--color_fondo);
+    margin-bottom: 5em;
+}
+.galerias{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*proyectos*/
+.trabajos { 
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.galerias h1{
+    font-family: var(--type_titulos);
+    text-align: center;
+    font-size: 40px;
+    margin: 3em;
+}
+.galerias p{
+    font-family: var(--type_titulos);
+    font-size: 15px;
+    width: 70%;
+    text-align: center;
+    margin:auto
+}
+.blanco_negro{
+    width: 25%; 
+}
+.digital{
+    width: 25%; 
+}
+.colores{
+    width: 25%; 
+}
+
+
+
+/*footer*/
+.footer{
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--color_1);
+}
+.frase{
+    font-size: 50px;
+    color: var(--color_fondo);
+
+}
+.derechos{
+    width: 70%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 10px;
+    color: var(--color_fondo);
+}
+.redes .iconos {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    padding: 5em 0em 5em 0em;
+}
+.redes .iconos ul li{
+    display: inline;
+    margin-right: 1em;
+    font-size: 3em;
+}
+.redes .iconos a{
+    color: var(--color_fondo);
+}
+
+
+
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+
+/*header*/
+.contenido {
+    flex-direction: column;
+    width: 80%;
+}
+.logo{
+    width: 30%;
+}
+.mi_portafolio{
+    font-size: 10px;
+}
+.menu{ 
+    margin-top: 1.5em;
+    gap: 30px;  
+}
+.menu ul li{
+    padding: .4em .5em .4em .5em;
+    font-size: 12px;
+}
+.menu a:hover{   
+ text-decoration: underline 7px;
+}
+
+
+
+/*bienvenidos*/
+.bienvenidos_caja {
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+    margin-top: 15em;
+}
+.galerias{
+    width: 100%; 
+}
+.texto{
+    gap: 10px;
+}
+.texto h1{
+    font-size: 25px;
+}
+.texto p{
+    font-size: 12px;
+}
+.texto .icono_movimiento{
+    padding-top: .8em;
+}
+
+
+
+/*servicios*/
+.servicios{
+    padding-top: 7em;
+    width: 80%;
+    gap: 10px;
+}
+.servicioss h1{
+    font-size: 20px;
+    margin: .5em;
+    margin-top: 1.5em;
+}
+.servicioss p{
+    font-size: 12px;
+    width: 100%;
+    margin: 2em;
+}
+.servicioss h3{
+    font-size: 15px; 
+}
+.servicioss .icono_movimiento{
+    font-size: 15px;
+}
+
+
+
+/*proyectos*/
+.galerias{
+    width: 80%;
+}
+.trabajos { 
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.galerias h1{
+    font-size: 20px;
+    margin: 1em;
+    margin-top: 3em;
+}
+.galerias p{
+    font-size: 12px;
+    width: 100%;
+}
+.blanco_negro{
+    width: 100%; 
+}
+.digital{
+    width: 100%; 
+}
+.colores{
+    width: 100%; 
+}
+
+
+
+/*footer*/
+.frase{
+    font-size: 40px;
+    text-align: center;
+}
+.derechos{
+    font-size: 8px;
+}
+.redes .iconos {
+    padding: 2.5em 0em 2.5em 0em;
+}
+.redes .iconos ul li{
+    font-size: 2em;
+}
+
+
+ 
+
+}
+
